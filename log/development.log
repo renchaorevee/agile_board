@@ -491,3 +491,1239 @@ Rendered layouts/_header.html.erb (14.0ms)
 Rendered layouts/_footer.html.erb (4.0ms)
 Rendered users/index.html.erb within layouts/application (116.0ms)
 Completed 200 OK in 276ms (Views: 191.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:29:40 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (158.0ms)
+Completed 200 OK in 223ms (Views: 220.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:31:22 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (23.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (168.0ms)
+Completed 200 OK in 227ms (Views: 223.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:31:24 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 250ms (Views: 246.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:31:50 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (161.0ms)
+Completed 200 OK in 221ms (Views: 218.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:45:19 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (23.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (189.0ms)
+Completed 200 OK in 258ms (Views: 255.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:45:37 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+Rendered layouts/_header.html.erb (26.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 267ms (Views: 265.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:46:11 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (15.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (191.0ms)
+Completed 200 OK in 259ms (Views: 240.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:46:41 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (196.0ms)
+Completed 200 OK in 258ms (Views: 254.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:50:18 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (24.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (228.0ms)
+Completed 200 OK in 291ms (Views: 288.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:50:20 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+Rendered layouts/_header.html.erb (43.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (321.0ms)
+Completed 200 OK in 385ms (Views: 383.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:50:21 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (5.0ms)
+Rendered layouts/_stylesheets.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered pages/home.html.erb within layouts/application (267.0ms)
+Completed 200 OK in 340ms (Views: 337.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:50:49 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 250ms (Views: 242.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:50:57 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (10.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (4.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 277ms (Views: 261.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:51:05 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (6.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (216.0ms)
+Completed 200 OK in 294ms (Views: 284.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:51:23 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (13.0ms)
+Rendered pages/home.html.erb within layouts/application (177.0ms)
+Completed 200 OK in 238ms (Views: 235.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:51:51 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (170.0ms)
+Completed 200 OK in 230ms (Views: 227.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:52:49 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (20.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (174.0ms)
+Completed 200 OK in 246ms (Views: 243.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:02 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (44.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (302.0ms)
+Completed 200 OK in 398ms (Views: 391.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:13 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (189.0ms)
+Completed 200 OK in 257ms (Views: 247.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:21 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (11.0ms)
+Rendered pages/home.html.erb within layouts/application (239.0ms)
+Completed 200 OK in 468ms (Views: 463.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:28 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (14.0ms)
+Rendered pages/home.html.erb within layouts/application (328.0ms)
+Completed 200 OK in 496ms (Views: 480.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:38 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 242ms (Views: 239.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:53 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (19.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered pages/home.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 236ms (Views: 232.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:53:56 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 243ms (Views: 241.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:54:43 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (163.0ms)
+Completed 200 OK in 222ms (Views: 219.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:55:08 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (1.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (154.0ms)
+Completed 200 OK in 205ms (Views: 202.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:55:27 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (155.0ms)
+Completed 200 OK in 205ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:55:48 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (214.0ms)
+Completed 200 OK in 307ms (Views: 302.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:56:51 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (158.0ms)
+Completed 200 OK in 215ms (Views: 211.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:57:20 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_board_mockup.html.erb (3.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (18.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 262ms (Views: 257.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:57:44 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_board_mockup.html.erb (2.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (202.0ms)
+Completed 200 OK in 264ms (Views: 262.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:00:24 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_board_mockup.html.erb (22.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 240ms (Views: 235.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:00:47 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (16.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (165.0ms)
+Completed 200 OK in 220ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:01:22 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (29.0ms)
+Rendered layouts/_stylesheets.html.erb (12.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 240ms (Views: 236.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:01:57 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_board_mockup.html.erb (19.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (189.0ms)
+Completed 200 OK in 242ms (Views: 240.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:02:13 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (16.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (17.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (190.0ms)
+Completed 200 OK in 252ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:03:03 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered pages/home.html.erb within layouts/application (161.0ms)
+Completed 200 OK in 228ms (Views: 224.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:03:10 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (178.0ms)
+Completed 200 OK in 229ms (Views: 226.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:03:38 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (26.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 223ms (Views: 220.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:03:55 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (21.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (179.0ms)
+Completed 200 OK in 247ms (Views: 244.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:05:32 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (176.0ms)
+Completed 200 OK in 225ms (Views: 224.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:06:38 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (164.0ms)
+Completed 200 OK in 215ms (Views: 211.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:06:51 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_board_mockup.html.erb (19.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (173.0ms)
+Completed 200 OK in 225ms (Views: 222.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:07:05 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (20.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (180.0ms)
+Completed 200 OK in 239ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:07:39 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (45.0ms)
+Rendered pages/_board_mockup.html.erb (62.0ms)
+Rendered pages/home.html.erb within layouts/application (145.0ms)
+Completed 500 Internal Server Error in 220ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x3d23b070>:0x7214a86b>):
+    5:     <div style="padding: 5px; height: 95px"> Task details
+    6:     </div>
+    7:     <div>
+    8:       <div style="float: right;"><%= gravatar_for user, :size => 30 %></div>
+    9:     </div>
+    10:   </div>
+    11: </div>
+  app/views/pages/_sticky.html.erb:8:in `_app_views_pages__sticky_html_erb___1049376803_20430__624286545'
+  app/views/pages/_board_mockup.html.erb:18:in `_app_views_pages__board_mockup_html_erb___1649405508_20424_2061172598'
+  app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__96685255_20416_0'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (36.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (73.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:07:49 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (57.0ms)
+Rendered pages/_board_mockup.html.erb (75.0ms)
+Rendered pages/home.html.erb within layouts/application (162.0ms)
+Completed 500 Internal Server Error in 222ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x57f3a295>:0x3c37114f>):
+    5:     <div style="padding: 5px; height: 95px"> Task details
+    6:     </div>
+    7:     <div>
+    8:       <div style="float: right;"><%= gravatar_for user, :size => 30 %></div>
+    9:     </div>
+    10:   </div>
+    11: </div>
+  app/views/pages/_sticky.html.erb:8:in `_app_views_pages__sticky_html_erb___1049376803_20516__624286545'
+  app/views/pages/_board_mockup.html.erb:18:in `_app_views_pages__board_mockup_html_erb___1649405508_20510_2061172598'
+  app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__96685255_20502_0'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:07:55 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (220.0ms)
+Completed 200 OK in 274ms (Views: 272.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 23:08:08 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (4.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered users/show.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 194ms (Views: 123.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:08:36 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (25.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 254ms (Views: 251.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:08:44 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (19.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (180.0ms)
+Completed 200 OK in 245ms (Views: 241.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:08:54 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (18.0ms)
+Rendered layouts/_stylesheets.html.erb (12.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (201.0ms)
+Completed 200 OK in 259ms (Views: 258.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:11:38 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (23.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (306.0ms)
+Completed 200 OK in 430ms (Views: 427.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:11:48 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (196.0ms)
+Completed 200 OK in 250ms (Views: 246.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:12:55 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 242ms (Views: 240.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:13:05 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (17.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (136.0ms)
+Completed 200 OK in 241ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-03-27 23:13:08 -0700
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (131.0ms)
+Completed 200 OK in 189ms (Views: 186.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-03-27 23:13:19 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qfdCzdMz+bzjdPSOuR8YNzEYp8KcPd4/r5GG2DKg3QY=", "session"=>{"email"=>"allench86@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'allench86@gmail.com' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 109ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 23:13:19 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered users/show.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 211ms (Views: 133.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:13:22 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (17.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (9.0ms)
+Rendered pages/home.html.erb within layouts/application (175.0ms)
+Completed 200 OK in 227ms (Views: 224.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:13:35 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (16.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (194.0ms)
+Completed 200 OK in 256ms (Views: 253.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:14:31 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (18.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (249.0ms)
+Completed 200 OK in 319ms (Views: 318.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:15:19 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (84.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (226.0ms)
+Completed 200 OK in 286ms (Views: 284.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:15:46 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (11.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (115.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (256.0ms)
+Completed 200 OK in 311ms (Views: 308.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:16:36 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (117.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (280.0ms)
+Completed 200 OK in 359ms (Views: 357.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:17:47 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (122.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (287.0ms)
+Completed 200 OK in 338ms (Views: 335.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:18:19 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (109.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (273.0ms)
+Completed 200 OK in 344ms (Views: 341.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:19:07 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (114.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered pages/home.html.erb within layouts/application (268.0ms)
+Completed 200 OK in 327ms (Views: 324.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:20:34 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (3.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (5.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (147.0ms)
+Rendered layouts/_stylesheets.html.erb (17.0ms)
+Rendered layouts/_header.html.erb (17.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (348.0ms)
+Completed 200 OK in 413ms (Views: 404.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:21:14 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (124.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (282.0ms)
+Completed 200 OK in 334ms (Views: 330.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:21:26 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (148.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (295.0ms)
+Completed 200 OK in 355ms (Views: 351.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:21:35 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (129.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered pages/home.html.erb within layouts/application (321.0ms)
+Completed 200 OK in 376ms (Views: 371.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:22:02 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (5.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (142.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (286.0ms)
+Completed 200 OK in 343ms (Views: 341.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:22:21 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (5.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_board_mockup.html.erb (131.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (285.0ms)
+Completed 200 OK in 356ms (Views: 353.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:23:19 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (135.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (22.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 353ms (Views: 352.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:23:58 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (118.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (280.0ms)
+Completed 200 OK in 339ms (Views: 337.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:24:08 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (143.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (22.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (315.0ms)
+Completed 200 OK in 380ms (Views: 378.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:24:27 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (118.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (291.0ms)
+Completed 200 OK in 346ms (Views: 344.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:24:38 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (122.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (289.0ms)
+Completed 200 OK in 342ms (Views: 341.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:25:48 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (120.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (263.0ms)
+Completed 200 OK in 315ms (Views: 313.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:26:08 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_board_mockup.html.erb (123.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered pages/home.html.erb within layouts/application (300.0ms)
+Completed 200 OK in 369ms (Views: 367.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:27:40 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (7.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (152.0ms)
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (307.0ms)
+Completed 200 OK in 368ms (Views: 364.0ms | ActiveRecord: 2.0ms)
