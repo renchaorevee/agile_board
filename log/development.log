@@ -1,0 +1,368 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+  [1m[36mSQL (8.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (5.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_info"
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100821203213)
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100821203213')
+Migrating to AddEmailUniquenessIndex (20100822012431)
+  [1m[36mSQL (0.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100822012431')[0m
+Migrating to AddPasswordToUsers (20100822204528)
+  [1m[35mSQL (0.0ms)[0m  ALTER TABLE "users" ADD "encrypted_password" varchar(255)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100822204528')
+Migrating to AddSaltToUsers (20100822233125)
+  [1m[36mSQL (0.0ms)[0m  [1mALTER TABLE "users" ADD "salt" varchar(255)[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100822233125')[0m
+Migrating to AddAdminToUsers (20100829021049)
+  [1m[35mSQL (0.0ms)[0m  ALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100829021049')
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (3.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:06:43 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (10.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (5.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_stylesheets.html.erb (20.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (39.0ms)
+Rendered layouts/_footer.html.erb (18.0ms)
+Rendered pages/home.html.erb within layouts/application (384.0ms)
+Completed 200 OK in 575ms (Views: 555.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:06:48 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (29.0ms)
+  [1m[35mCACHE (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (48.0ms)
+Rendered layouts/_footer.html.erb (55.0ms)
+Rendered pages/home.html.erb within layouts/application (479.0ms)
+Completed 200 OK in 580ms (Views: 576.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-03-27 22:06:58 -0700
+  Processing by UsersController#new as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+Rendered shared/_error_messages.html.erb (6.0ms)
+Rendered users/_fields.html.erb (205.0ms)
+Rendered layouts/_stylesheets.html.erb (14.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (4.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (101.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered users/new.html.erb within layouts/application (629.0ms)
+Completed 200 OK in 829ms (Views: 712.0ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-03-27 22:07:19 -0700
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "user"=>{"name"=>"admin", "email"=>"allench86@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('allench86@gmail.com')) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (28.0ms)
+Rendered users/_fields.html.erb (62.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (93.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered users/new.html.erb within layouts/application (379.0ms)
+Completed 200 OK in 759ms (Views: 462.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-03-27 22:07:32 -0700
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "user"=>{"name"=>"admin", "email"=>"allench86@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('allench86@gmail.com')) LIMIT 1
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mAREL (4.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt", "admin") VALUES ('admin', 'allench86@gmail.com', '2014-03-28 05:07:32.948000', '2014-03-28 05:07:32.948000', 'b9f4ac055417fe4daea932bc2868f9a2b3a04309fe7accef2df6ef330ed63e98', 'abd83e0158c5b18e97e24d25614b1a5674e3d2770494a3a5d84e1987417de101', 'f')[0m
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 197ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:07:33 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (24.0ms)
+Rendered layouts/_footer.html.erb (9.0ms)
+Rendered users/show.html.erb within layouts/application (161.0ms)
+Completed 200 OK in 350ms (Views: 249.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:07:40 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (53.0ms)
+Rendered layouts/_footer.html.erb (222.0ms)
+Rendered users/show.html.erb within layouts/application (423.0ms)
+Completed 200 OK in 703ms (Views: 540.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:07:49 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (51.0ms)
+Rendered layouts/_footer.html.erb (13.0ms)
+Rendered users/show.html.erb within layouts/application (214.0ms)
+Completed 200 OK in 404ms (Views: 313.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-27 22:07:51 -0700
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (6.0ms)
+Rendered users/_fields.html.erb (57.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (12.0ms)
+Rendered users/edit.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 445ms (Views: 352.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at 2014-03-27 22:07:56 -0700
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "user"=>{"name"=>"admin", "email"=>"allench86@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mSCHEMA (8.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('allench86@gmail.com')) AND ("users".id <> 1) LIMIT 1
+Rendered shared/_error_messages.html.erb (41.0ms)
+Rendered users/_fields.html.erb (55.0ms)
+Rendered layouts/_stylesheets.html.erb (39.0ms)
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered users/edit.html.erb within layouts/application (392.0ms)
+Completed 200 OK in 655ms (Views: 469.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:13:24 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (12.0ms)
+Rendered layouts/_header.html.erb (30.0ms)
+Rendered layouts/_footer.html.erb (10.0ms)
+Rendered pages/home.html.erb within layouts/application (290.0ms)
+Completed 200 OK in 392ms (Views: 389.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 22:13:28 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (11.0ms)
+Rendered pages/home.html.erb within layouts/application (309.0ms)
+Completed 200 OK in 384ms (Views: 379.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:13:29 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+Rendered layouts/_stylesheets.html.erb (20.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered users/show.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 701ms (Views: 384.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-27 22:13:35 -0700
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered shared/_error_messages.html.erb (4.0ms)
+Rendered users/_fields.html.erb (50.0ms)
+Rendered layouts/_stylesheets.html.erb (41.0ms)
+Rendered layouts/_header.html.erb (22.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered users/edit.html.erb within layouts/application (258.0ms)
+Completed 200 OK in 428ms (Views: 344.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at 2014-03-27 22:13:38 -0700
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "user"=>{"name"=>"admin", "email"=>"allench86@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"1"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('allench86@gmail.com')) AND ("users".id <> 1) LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (49.0ms)
+Rendered users/_fields.html.erb (39.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered users/edit.html.erb within layouts/application (259.0ms)
+Completed 200 OK in 554ms (Views: 337.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-27 22:14:03 -0700
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (4.0ms)
+Rendered users/_fields.html.erb (54.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered users/edit.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 384ms (Views: 299.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:14:06 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (48.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered users/show.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 351ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:14:10 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered users/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 299ms (Views: 211.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:14:11 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (39.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered users/show.html.erb within layouts/application (209.0ms)
+Completed 200 OK in 445ms (Views: 344.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-03-27 22:14:14 -0700
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered shared/_error_messages.html.erb (2.0ms)
+Rendered users/_fields.html.erb (44.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+Rendered layouts/_header.html.erb (24.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered users/edit.html.erb within layouts/application (202.0ms)
+Completed 200 OK in 384ms (Views: 293.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at 2014-03-27 22:14:33 -0700
+  Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "user"=>{"name"=>"admin", "email"=>"allench86@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"1"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('allench86@gmail.com')) AND ("users".id <> 1) LIMIT 1
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 169ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:14:33 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSCHEMA (3.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (23.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered users/show.html.erb within layouts/application (107.0ms)
+Completed 200 OK in 266ms (Views: 169.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-03-27 22:14:37 -0700
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (4.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (127.0ms)
+Rendered layouts/_footer.html.erb (14.0ms)
+Rendered users/show.html.erb within layouts/application (249.0ms)
+Completed 200 OK in 396ms (Views: 317.0ms | ActiveRecord: 4.0ms)

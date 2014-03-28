@@ -5,7 +5,7 @@ ruby "2.0.0", :engine => "jruby", :engine_version => "1.7.11"
 gem 'rails', '3.0.12'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
-gem 'sqlite3', '1.3.4'
+gem 'activerecord-jdbcsqlite3-adapter'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
