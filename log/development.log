@@ -1727,3 +1727,66 @@ Rendered layouts/_header.html.erb (11.0ms)
 Rendered layouts/_footer.html.erb (5.0ms)
 Rendered pages/home.html.erb within layouts/application (307.0ms)
 Completed 200 OK in 368ms (Views: 364.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:32:54 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_board_mockup.html.erb (107.0ms)
+Rendered layouts/_stylesheets.html.erb (5.0ms)
+Rendered layouts/_header.html.erb (22.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (255.0ms)
+Completed 200 OK in 303ms (Views: 301.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-27 23:33:26 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (9.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (115.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (252.0ms)
+Completed 200 OK in 301ms (Views: 299.0ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+  [1m[36mSQL (9.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+  [1m[36mSQL (16.0ms)[0m  [1mCREATE TABLE "columns" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "description" text, "order" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140329171355')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m

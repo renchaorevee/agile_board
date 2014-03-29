@@ -3859,3 +3859,428 @@ Rendered layouts/_header.html.erb (10.0ms)
 Rendered layouts/_footer.html.erb (3.0ms)
 Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
   [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mSCHEMA (6.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (3.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("columns")
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSCHEMA (2.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("columns")
+  [1m[36mSQL (6.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+  [1m[36mSQL (4.0ms)[0m  [1mCREATE TABLE "columns" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "description" text, "order" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140329171355')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (9.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 18:16:06.642000', '2014-03-29 18:16:06.642000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 18:16:06.813000', '2014-03-29 18:16:06.813000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 18:16:06.916000', '2014-03-29 18:16:06.916000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 18:16:06.930000', '2014-03-29 18:16:06.930000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 18:18:24.855000', '2014-03-29 18:18:24.855000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 18:18:25.031000', '2014-03-29 18:18:25.031000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 18:18:25.075000', '2014-03-29 18:18:25.075000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (33.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (7.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 19:42:12.357000', '2014-03-29 19:42:12.357000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 19:42:12.483000', '2014-03-29 19:42:12.483000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 19:42:12.497000', '2014-03-29 19:42:12.497000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 19:43:36.900000', '2014-03-29 19:43:36.900000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 19:46:48.428000', '2014-03-29 19:46:48.428000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 19:46:48.573000', '2014-03-29 19:46:48.573000')[0m
+  [1m[35mSavepoint (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 19:46:48.596000', '2014-03-29 19:46:48.596000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (12.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 19:54:48.831000', '2014-03-29 19:54:48.831000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 19:54:48.985000', '2014-03-29 19:54:48.985000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 19:54:49.004000', '2014-03-29 19:54:49.004000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (39.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (16.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 19:56:30.464000', '2014-03-29 19:56:30.464000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 19:56:31.213000', '2014-03-29 19:56:31.213000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (3.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 19:56:31.236000', '2014-03-29 19:56:31.236000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:10:21.388000', '2014-03-29 20:10:21.388000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:10:21.577000', '2014-03-29 20:10:21.577000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:10:21.595000', '2014-03-29 20:10:21.595000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:13:58.065000', '2014-03-29 20:13:58.065000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:13:58.261000', '2014-03-29 20:13:58.261000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:13:58.291000', '2014-03-29 20:13:58.291000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:15:01.030000', '2014-03-29 20:15:01.030000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:15:01.230000', '2014-03-29 20:15:01.230000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:15:01.247000', '2014-03-29 20:15:01.247000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (8.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (3.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:16:27.317000', '2014-03-29 20:16:27.317000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (4.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:16:27.559000', '2014-03-29 20:16:27.559000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:16:27.577000', '2014-03-29 20:16:27.577000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (8.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (10.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:19:59.979000', '2014-03-29 20:19:59.979000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:20:00.358000', '2014-03-29 20:20:00.358000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:21:32.816000', '2014-03-29 20:21:32.816000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:21:33.007000', '2014-03-29 20:21:33.007000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:22:35.056000', '2014-03-29 20:22:35.056000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:24:15.321000', '2014-03-29 20:24:15.321000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (8.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:25:43.364000', '2014-03-29 20:25:43.364000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (7.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (6.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:26:44.776000', '2014-03-29 20:26:44.776000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (8.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:29:11.121000', '2014-03-29 20:29:11.121000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (11.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (8.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:30:04.861000', '2014-03-29 20:30:04.861000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-29 20:32:28.146000', '2014-03-29 20:32:28.146000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (11.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (9.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:33:29.931000', '2014-03-29 20:33:29.931000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:34:20.612000', '2014-03-29 20:34:20.612000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:41:35.511000', '2014-03-29 20:41:35.511000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (2.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:41:35.725000', '2014-03-29 20:41:35.725000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (11.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (7.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:43:18.151000', '2014-03-29 20:43:18.151000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (2.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:43:18.397000', '2014-03-29 20:43:18.397000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:43:18.413000', '2014-03-29 20:43:18.413000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (10.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:44:53.856000', '2014-03-29 20:44:53.856000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:44:54.052000', '2014-03-29 20:44:54.052000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:44:54.063000', '2014-03-29 20:44:54.063000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (11.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:46:08.285000', '2014-03-29 20:46:08.285000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:46:08.616000', '2014-03-29 20:46:08.616000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 0, '2014-03-29 20:46:08.680000', '2014-03-29 20:46:08.680000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (8.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:47:40.575000', '2014-03-29 20:47:40.575000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:47:40.787000', '2014-03-29 20:47:40.787000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT MAX("columns"."order") AS max_id FROM "columns"
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 20:47:40.814000', '2014-03-29 20:47:40.814000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:48:30.862000', '2014-03-29 20:48:30.862000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:48:31.049000', '2014-03-29 20:48:31.049000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT MAX("columns"."order") AS max_id FROM "columns"
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 20:48:31.089000', '2014-03-29 20:48:31.089000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:48:31.135000', '2014-03-29 20:48:31.135000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (14.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:49:43.555000', '2014-03-29 20:49:43.555000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (2.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:49:43.765000', '2014-03-29 20:49:43.765000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT MAX("columns"."order") AS max_id FROM "columns"
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 20:49:43.793000', '2014-03-29 20:49:43.793000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (3.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:50:36.992000', '2014-03-29 20:50:36.992000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:50:37.240000', '2014-03-29 20:50:37.240000')[0m
+  [1m[35mSavepoint (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (3.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT MAX("columns"."order") AS max_id FROM "columns"
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 20:50:37.260000', '2014-03-29 20:50:37.260000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 20:51:24.820000', '2014-03-29 20:51:24.820000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 20:51:25.024000', '2014-03-29 20:51:25.024000')[0m
+  [1m[35mSavepoint (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT MAX("columns"."order") AS max_id FROM "columns"
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 20:51:25.100000', '2014-03-29 20:51:25.100000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1

@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :columns
+
   resources :users
 
   resources :sessions,      :only => [:new, :create, :destroy]
