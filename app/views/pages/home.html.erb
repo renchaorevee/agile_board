@@ -1,7 +1,7 @@
 <% if signed_in? %>
 
 <div style="min-height: 500px; ">
-<%= render ("board_mockup") %>
+<%= render :partial => "board_mockup", :locals => { :columns => @columns } %>
 </div>
 
 <% else %>

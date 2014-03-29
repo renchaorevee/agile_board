@@ -31,82 +31,89 @@
     <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
     </div>
   </div>
-  <div style="max-width: 400px; float:left;">
-    <div style="float:left">
-      <div style="text-align: center">TODO
-      </div>
-      <div><hr>
-      </div>
-      <div>
-        <div style="padding: 10px;">
-          <%= render("sticky") %>
+  <div style="float:left;">
+    <% columns.each do |column| %>
+      <%= render("column", :column => column) %>
+    <% end %>
+
+
+    <!-- <div style="max-width: 400px; float:left;">
+      <div style="float:left">
+        <div style="text-align: center">TODO
+        </div>
+        <div><hr>
+        </div>
+        <div>
+          <div style="padding: 10px;">
+            <%= render("sticky") %>
+          </div>
         </div>
       </div>
-    </div>
-    <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
-    </div>
-  </div>
-  <div style="max-width: 400px; float:left;">
-    <div style="float:left">
-      <div style="text-align: center">Working
+      <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
       </div>
-      <div><hr>
-      </div>
-      <div>
-        <div style="padding: 10px;">
-          <%= render("sticky") %>
+    </div>
+    <div style="max-width: 400px; float:left;">
+      <div style="float:left">
+        <div style="text-align: center">Working
+        </div>
+        <div><hr>
+        </div>
+        <div>
+          <div style="padding: 10px;">
+            <%= render("sticky") %>
+          </div>
         </div>
       </div>
-    </div>
-    <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
-    </div>
-  </div>
-  <div style="max-width: 400px; float:left;">
-    <div style="float:left">
-      <div style="text-align: center">Review
+      <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
       </div>
-      <div><hr>
-      </div>
-      <div>
-        <div style="padding: 10px;">
-          <%= render("sticky") %>
+    </div>
+    <div style="max-width: 400px; float:left;">
+      <div style="float:left">
+        <div style="text-align: center">Review
         </div>
-        <div style="padding: 10px;">
-          <%= render("sticky") %>
+        <div><hr>
         </div>
-      </div>
-    </div>
-    <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
-    </div>
-  </div>
-  <div style="max-width: 400px; float:left;">
-    <div style="float:left">
-      <div style="text-align: center">QA
-      </div>
-      <div><hr>
-      </div>
-      <div>
-        <div style="padding: 10px;">
-          <%= render("sticky") %>
+        <div>
+          <div style="padding: 10px;">
+            <%= render("sticky") %>
+          </div>
+          <div style="padding: 10px;">
+            <%= render("sticky") %>
+          </div>
         </div>
       </div>
-    </div>
-    <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
-    </div>
-  </div>
-  <div style="max-width: 400px; float:left;">
-    <div style="float:left">
-      <div style="text-align: center">Done
+      <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
       </div>
-      <div><hr>
-      </div>
-      <div>
-        <div style="padding: 10px;">
-          <%= render("sticky") %>
+    </div>
+    <div style="max-width: 400px; float:left;">
+      <div style="float:left">
+        <div style="text-align: center">QA
+        </div>
+        <div><hr>
+        </div>
+        <div>
+          <div style="padding: 10px;">
+            <%= render("sticky") %>
+          </div>
         </div>
       </div>
+      <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
+      </div>
     </div>
-    <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
-    </div>
+    <div style="max-width: 400px; float:left;">
+      <div style="float:left">
+        <div style="text-align: center">Done
+        </div>
+        <div><hr>
+        </div>
+        <div>
+          <div style="padding: 10px;">
+            <%= render("sticky") %>
+          </div>
+        </div>
+      </div>
+      <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
+      </div>
+    </div>-->
   </div>
 </div>

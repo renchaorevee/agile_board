@@ -1790,3 +1790,853 @@ Migrating to CreateColumns (20140329171355)
   [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
   [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
   [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:35:23 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (20.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_board_mockup.html.erb (197.0ms)
+Rendered layouts/_stylesheets.html.erb (20.0ms)
+Rendered layouts/_header.html.erb (84.0ms)
+Rendered layouts/_footer.html.erb (13.0ms)
+Rendered pages/home.html.erb within layouts/application (948.0ms)
+Completed 200 OK in 1144ms (Views: 1116.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:36:12 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_board_mockup.html.erb (190.0ms)
+Rendered layouts/_stylesheets.html.erb (11.0ms)
+Rendered layouts/_header.html.erb (27.0ms)
+Rendered layouts/_footer.html.erb (12.0ms)
+Rendered pages/home.html.erb within layouts/application (438.0ms)
+Completed 200 OK in 522ms (Views: 517.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:37:14 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_board_mockup.html.erb (203.0ms)
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+Rendered layouts/_header.html.erb (28.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered pages/home.html.erb within layouts/application (474.0ms)
+Completed 200 OK in 562ms (Views: 560.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:38:00 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (5.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (252.0ms)
+Rendered layouts/_stylesheets.html.erb (12.0ms)
+Rendered layouts/_header.html.erb (45.0ms)
+Rendered layouts/_footer.html.erb (11.0ms)
+Rendered pages/home.html.erb within layouts/application (530.0ms)
+Completed 200 OK in 621ms (Views: 616.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:38:17 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (6.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (7.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (175.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (56.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (501.0ms)
+Completed 200 OK in 586ms (Views: 581.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:39:00 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (171.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+Rendered layouts/_header.html.erb (17.0ms)
+Rendered layouts/_footer.html.erb (10.0ms)
+Rendered pages/home.html.erb within layouts/application (399.0ms)
+Completed 200 OK in 481ms (Views: 479.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 14:46:20 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns"
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (116.0ms)
+Rendered layouts/_footer.html.erb (10.0ms)
+Rendered columns/index.html.erb within layouts/application (231.0ms)
+Completed 200 OK in 352ms (Views: 320.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/columns/new" for 127.0.0.1 at 2014-03-29 14:46:22 -0700
+  Processing by ColumnsController#new as HTML
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered columns/_form.html.erb (189.0ms)
+Rendered layouts/_stylesheets.html.erb (13.0ms)
+  [1m[36mSCHEMA (3.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (109.0ms)
+Rendered layouts/_footer.html.erb (17.0ms)
+Rendered columns/new.html.erb within layouts/application (452.0ms)
+Completed 200 OK in 562ms (Views: 524.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/columns" for 127.0.0.1 at 2014-03-29 14:46:43 -0700
+  Processing by ColumnsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "column"=>{"name"=>"To Do", "description"=>"To do column", "order"=>"1"}, "commit"=>"Create Column"}
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mAREL (7.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "order", "created_at", "updated_at") VALUES ('To Do', 'To do column', 1, '2014-03-29 21:46:43.783000', '2014-03-29 21:46:43.783000')[0m
+Redirected to http://0.0.0.0:3000/columns/1
+Completed 302 Found in 156ms
+
+
+Started GET "/columns/1" for 127.0.0.1 at 2014-03-29 14:46:43 -0700
+  Processing by ColumnsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (15.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (102.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered columns/show.html.erb within layouts/application (232.0ms)
+Completed 200 OK in 362ms (Views: 314.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 14:46:47 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered layouts/_stylesheets.html.erb (13.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (128.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered columns/index.html.erb within layouts/application (272.0ms)
+Completed 200 OK in 429ms (Views: 383.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:46:52 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (9.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY order[0m
+ActiveRecord::JDBCError: [SQLITE_ERROR] SQL error or missing database (near "order": syntax error): SELECT "columns".* FROM "columns" ORDER BY order
+Completed 500 Internal Server Error in 42ms
+
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: [SQLITE_ERROR] SQL error or missing database (near "order": syntax error): SELECT "columns".* FROM "columns" ORDER BY order):
+  app/controllers/pages_controller.rb:6:in `home'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (111.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+  [1m[36mSQL (7.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+Migrating to RenameOrderColumnInColumns (20140329215103)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSQL (4.0ms)[0m  CREATE TABLE "acolumns" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "description" text, "column_order" integer NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (3.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mCopy Table (1.0ms)[0m  [1mSELECT * FROM "columns"[0m
+  [1m[35mCopy Table (0.0ms)[0m  INSERT INTO "acolumns" ("id","name","description","column_order","created_at","updated_at") VALUES (1, 'To Do', 'To do column', 1, '2014-03-29 21:46:43.783000', '2014-03-29 21:46:43.783000')
+  [1m[36mSQL (1.0ms)[0m  [1mDROP TABLE "columns"[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("acolumns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("acolumns")[0m
+  [1m[35mSQL (0.0ms)[0m  CREATE TABLE "columns" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) NOT NULL, "description" text, "column_order" integer NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("acolumns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("acolumns")
+  [1m[36mCopy Table (1.0ms)[0m  [1mSELECT * FROM "acolumns"[0m
+  [1m[35mCopy Table (0.0ms)[0m  INSERT INTO "columns" ("id","name","description","column_order","created_at","updated_at") VALUES (1, 'To Do', 'To do column', 1, '2014-03-29 21:46:43.783000', '2014-03-29 21:46:43.783000')
+  [1m[36mSQL (1.0ms)[0m  [1mDROP TABLE "acolumns"[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140329215103')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (4.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 14:56:05 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[36mColumn Load (9.0ms)[0m  [1mSELECT "columns".* FROM "columns"[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (133.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered columns/index.html.erb within layouts/application (424.0ms)
+Completed 200 OK in 586ms (Views: 534.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 14:56:25 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[36mColumn Load (1.0ms)[0m  [1mSELECT "columns".* FROM "columns"[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (11.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (285.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered columns/index.html.erb within layouts/application (470.0ms)
+Completed 200 OK in 630ms (Views: 595.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:56:30 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns" ORDER BY column_order
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (3.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered pages/_column.html.erb (108.0ms)
+Rendered pages/_board_mockup.html.erb (170.0ms)
+Rendered pages/home.html.erb within layouts/application (329.0ms)
+Completed 500 Internal Server Error in 517ms
+
+ActionView::Template::Error (undefined method `keys' for #<Column:0x6d347991>):
+  app/views/pages/_board_mockup.html.erb:36:in `_app_views_pages__board_mockup_html_erb___2085243446_3990_2061172598'
+  app/views/pages/_board_mockup.html.erb:35:in `_app_views_pages__board_mockup_html_erb___2085243446_3990_2061172598'
+  app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__1651007635_3982_0'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (92.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (162.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:57:54 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY column_order[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (3.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered pages/_column.html.erb (34.0ms)
+Rendered pages/_board_mockup.html.erb (115.0ms)
+Rendered pages/home.html.erb within layouts/application (248.0ms)
+Completed 500 Internal Server Error in 389ms
+
+ActionView::Template::Error (undefined method `keys' for #<Column:0x10178f2b>):
+  app/views/pages/_board_mockup.html.erb:36:in `_app_views_pages__board_mockup_html_erb___2085243446_4080_2061172598'
+  app/views/pages/_board_mockup.html.erb:35:in `_app_views_pages__board_mockup_html_erb___2085243446_4080_2061172598'
+  app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__1651007635_4072_0'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (78.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 14:59:17 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mColumn Load (4.0ms)[0m  SELECT "columns".* FROM "columns" ORDER BY column_order
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered pages/_column.html.erb (52.0ms)
+Rendered pages/_board_mockup.html.erb (97.0ms)
+Rendered pages/home.html.erb within layouts/application (203.0ms)
+Completed 500 Internal Server Error in 335ms
+
+ActionView::Template::Error (undefined method `keys' for #<Column:0x77f903f9>):
+  app/views/pages/_board_mockup.html.erb:36:in `_app_views_pages__board_mockup_html_erb___2085243446_4168_2061172598'
+  app/views/pages/_board_mockup.html.erb:35:in `_app_views_pages__board_mockup_html_erb___2085243446_4168_2061172598'
+  app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__1651007635_4160_0'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (84.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:05:34 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY column_order[0m
+ERROR: compiling _app_views_pages_home_html_erb__1651007635_4248_0 RAISED /Users/allench86/Dropbox/rails_projects/agile_board/app/views/pages/home.html.erb:4: syntax error, unexpected ','
+');@output_buffer.append= ( render ("board_mockup", :columns => @columns) );@output_buffer.safe_concat('
+                                                  ^
+Function body:           def _app_views_pages_home_html_erb__1651007635_4248_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "pages/home";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new; if signed_in? 
+@output_buffer.safe_concat('
+<div style="min-height: 500px; ">
+');@output_buffer.append= ( render ("board_mockup", :columns => @columns) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+
+'); else 
+@output_buffer.safe_concat('
+<h1>Sample App</h1>
+<p>
+  This is the home page agile board application.
+</p>
+
+');@output_buffer.append= ( link_to "Sign up now!", signup_path, :class => "signup_button round" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+'); end ;@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: org/jruby/RubyModule.java:2316:in `module_eval'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_view/template.rb:285:in `compile'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_view/template.rb:161:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications.rb:54:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_view/template.rb:154:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications.rb:52:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications.rb:52:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_view/render/rendering.rb:26:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/allench86/.rvm/rubies/jruby-1.7.11/lib/ruby/2.0/benchmark.rb:296:in `realtime'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activerecord-3.0.12/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/callbacks.rb:439:in `_run__1535240501__process_action__777747847__callbacks'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/callbacks.rb:425:in `_run_process_action_callbacks'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications.rb:52:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/notifications.rb:52:in `instrument'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/base.rb:119:in `process'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_controller/metal.rb:178:in `action'
+org/jruby/RubyProc.java:271:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:111:in `recognize'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:73:in `optimized_each'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:110:in `recognize'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activerecord-3.0.12/lib/active_record/query_cache.rb:32:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activerecord-3.0.12/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activerecord-3.0.12/lib/active_record/query_cache.rb:12:in `cache'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activerecord-3.0.12/lib/active_record/query_cache.rb:31:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activerecord-3.0.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/callbacks.rb:431:in `_run_call_callbacks'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/railties-3.0.12/lib/rails/rack/logger.rb:13:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/activesupport-3.0.12/lib/active_support/cache/strategy/local_cache.rb:90:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+org/jruby/ext/thread/Mutex.java:149:in `synchronize'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/railties-3.0.12/lib/rails/application.rb:168:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/railties-3.0.12/lib/rails/application.rb:77:in `method_missing'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/railties-3.0.12/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/Users/allench86/.rvm/rubies/jruby-1.7.11/lib/ruby/2.0/webrick/httpserver.rb:138:in `service'
+/Users/allench86/.rvm/rubies/jruby-1.7.11/lib/ruby/2.0/webrick/httpserver.rb:94:in `run'
+/Users/allench86/.rvm/rubies/jruby-1.7.11/lib/ruby/2.0/webrick/server.rb:295:in `start_thread'
+Rendered pages/home.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 133ms
+
+ActionView::Template::Error (/Users/allench86/Dropbox/rails_projects/agile_board/app/views/pages/home.html.erb:4: syntax error, unexpected ','
+');@output_buffer.append= ( render ("board_mockup", :columns => @columns) );@output_buffer.safe_concat('
+                                                  ^):
+    1: <% if signed_in? %>
+    2: 
+    3: <div style="min-height: 500px; ">
+    4: <%= render ("board_mockup", :columns => @columns) %>
+    5: </div>
+    6: 
+    7: <% else %>
+  
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (82.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (126.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:06:18 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY column_order[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered pages/_board_mockup.html.erb (91.0ms)
+Rendered pages/home.html.erb within layouts/application (183.0ms)
+Completed 500 Internal Server Error in 329ms
+
+ActionView::Template::Error (undefined local variable or method `columns' for #<#<Class:0x7b7d3308>:0x58a1918e>):
+    32:     </div>
+    33:   </div>
+    34:   <div style="float:left;">
+    35:     <% columns.each do |column| %>
+    36:       <%= render("column", :column => column) %>
+    37:     <% end %>
+    38: 
+  app/views/pages/_board_mockup.html.erb:35:in `_app_views_pages__board_mockup_html_erb___2085243446_4332_2061172598'
+  app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb__1651007635_4324_0'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:08:33 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns" ORDER BY column_order
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (11.0ms)
+Rendered pages/_column.html.erb (43.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (7.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (7.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (250.0ms)
+Rendered layouts/_stylesheets.html.erb (12.0ms)
+Rendered layouts/_header.html.erb (29.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (495.0ms)
+Completed 200 OK in 599ms (Views: 565.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:09:04 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns" ORDER BY column_order
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_column.html.erb (50.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (232.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+Rendered layouts/_header.html.erb (18.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered pages/home.html.erb within layouts/application (447.0ms)
+Completed 200 OK in 558ms (Views: 521.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:09:07 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (1.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY column_order[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_column.html.erb (65.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (6.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (4.0ms)
+Rendered pages/_board_mockup.html.erb (253.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (19.0ms)
+Rendered layouts/_footer.html.erb (12.0ms)
+Rendered pages/home.html.erb within layouts/application (480.0ms)
+Completed 200 OK in 606ms (Views: 554.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:09:11 -0700
+  Processing by PagesController#home as HTML
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns" ORDER BY column_order
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered pages/_new_sticky.html.erb (2.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_column.html.erb (48.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_board_mockup.html.erb (216.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (51.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (473.0ms)
+Completed 200 OK in 618ms (Views: 554.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/columns/new" for 127.0.0.1 at 2014-03-29 15:09:19 -0700
+  Processing by ColumnsController#new as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered columns/_form.html.erb (167.0ms)
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (132.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered columns/new.html.erb within layouts/application (422.0ms)
+Completed 200 OK in 556ms (Views: 515.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/columns" for 127.0.0.1 at 2014-03-29 15:09:54 -0700
+  Processing by ColumnsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "column"=>{"name"=>"Working", "description"=>"The tasks that is being working on.", "column_order"=>"2"}, "commit"=>"Create Column"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (8.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Working', 'The tasks that is being working on.', 2, '2014-03-29 22:09:54.361000', '2014-03-29 22:09:54.361000')
+Redirected to http://0.0.0.0:3000/columns/2
+Completed 302 Found in 122ms
+
+
+Started GET "/columns/2" for 127.0.0.1 at 2014-03-29 15:09:54 -0700
+  Processing by ColumnsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns" WHERE "columns"."id" = 2 LIMIT 1
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered columns/show.html.erb within layouts/application (43.0ms)
+Completed 500 Internal Server Error in 238ms
+
+ActionView::Template::Error (undefined method `order' for #<Column:0x77b48eeb>):
+    12: 
+    13: <p>
+    14:   <b>Order:</b>
+    15:   <%= @column.order %>
+    16: </p>
+    17: 
+    18: 
+  app/views/columns/show.html.erb:15:in `_app_views_columns_show_html_erb__1208897407_6072_0'
+  app/controllers/columns_controller.rb:18:in `show'
+
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (41.0ms)
+Rendered /Users/allench86/.rvm/gems/jruby-1.7.11@agile_borad/gems/actionpack-3.0.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (91.0ms)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 15:10:22 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[35mSCHEMA (2.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (124.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered columns/index.html.erb within layouts/application (252.0ms)
+Completed 200 OK in 359ms (Views: 321.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/columns/new" for 127.0.0.1 at 2014-03-29 15:10:28 -0700
+  Processing by ColumnsController#new as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered columns/_form.html.erb (66.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (88.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered columns/new.html.erb within layouts/application (255.0ms)
+Completed 200 OK in 351ms (Views: 322.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/columns" for 127.0.0.1 at 2014-03-29 15:10:52 -0700
+  Processing by ColumnsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "column"=>{"name"=>"Review", "description"=>"The tasks that is being reviewing.", "column_order"=>"3"}, "commit"=>"Create Column"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Review', 'The tasks that is being reviewing.', 3, '2014-03-29 22:10:52.571000', '2014-03-29 22:10:52.571000')
+Redirected to http://0.0.0.0:3000/columns/3
+Completed 302 Found in 67ms
+
+
+Started GET "/columns/3" for 127.0.0.1 at 2014-03-29 15:10:52 -0700
+  Processing by ColumnsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns" WHERE "columns"."id" = 3 LIMIT 1
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (104.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered columns/show.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 309ms (Views: 281.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 15:10:55 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns"[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (10.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (97.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered columns/index.html.erb within layouts/application (232.0ms)
+Completed 200 OK in 340ms (Views: 310.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/columns/new" for 127.0.0.1 at 2014-03-29 15:10:57 -0700
+  Processing by ColumnsController#new as HTML
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered columns/_form.html.erb (71.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (82.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered columns/new.html.erb within layouts/application (247.0ms)
+Completed 200 OK in 358ms (Views: 326.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/columns" for 127.0.0.1 at 2014-03-29 15:11:37 -0700
+  Processing by ColumnsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "column"=>{"name"=>"QA", "description"=>"The tasks that are in tests.", "column_order"=>"4"}, "commit"=>"Create Column"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('QA', 'The tasks that are in tests.', 4, '2014-03-29 22:11:38.064000', '2014-03-29 22:11:38.064000')[0m
+Redirected to http://0.0.0.0:3000/columns/4
+Completed 302 Found in 71ms
+
+
+Started GET "/columns/4" for 127.0.0.1 at 2014-03-29 15:11:38 -0700
+  Processing by ColumnsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 4 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (18.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (82.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered columns/show.html.erb within layouts/application (195.0ms)
+Completed 200 OK in 286ms (Views: 253.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/columns" for 127.0.0.1 at 2014-03-29 15:11:40 -0700
+  Processing by ColumnsController#index as HTML
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered layouts/_stylesheets.html.erb (32.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (91.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered columns/index.html.erb within layouts/application (256.0ms)
+Completed 200 OK in 349ms (Views: 320.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/columns/new" for 127.0.0.1 at 2014-03-29 15:11:42 -0700
+  Processing by ColumnsController#new as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered columns/_form.html.erb (90.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (96.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered columns/new.html.erb within layouts/application (283.0ms)
+Completed 200 OK in 381ms (Views: 353.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/columns" for 127.0.0.1 at 2014-03-29 15:11:55 -0700
+  Processing by ColumnsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "column"=>{"name"=>"Done", "description"=>"The tasks that are done.", "column_order"=>"5"}, "commit"=>"Create Column"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Done', 'The tasks that are done.', 5, '2014-03-29 22:11:55.858000', '2014-03-29 22:11:55.858000')
+Redirected to http://0.0.0.0:3000/columns/5
+Completed 302 Found in 113ms
+
+
+Started GET "/columns/5" for 127.0.0.1 at 2014-03-29 15:11:55 -0700
+  Processing by ColumnsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns" WHERE "columns"."id" = 5 LIMIT 1
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered layouts/_stylesheets.html.erb (6.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered layouts/_header.html.erb (144.0ms)
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered columns/show.html.erb within layouts/application (246.0ms)
+Completed 200 OK in 349ms (Views: 317.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 15:11:58 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY column_order[0m
+  [1m[35mSCHEMA (4.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered pages/_new_sticky.html.erb (2.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_column.html.erb (42.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_column.html.erb (20.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_column.html.erb (22.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_column.html.erb (20.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_column.html.erb (19.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (1.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (2.0ms)
+Rendered pages/_sticky.html.erb (3.0ms)
+Rendered pages/_board_mockup.html.erb (381.0ms)
+Rendered layouts/_stylesheets.html.erb (7.0ms)
+Rendered layouts/_header.html.erb (39.0ms)
+Rendered layouts/_footer.html.erb (5.0ms)
+Rendered pages/home.html.erb within layouts/application (602.0ms)
+Completed 200 OK in 694ms (Views: 662.0ms | ActiveRecord: 6.0ms)

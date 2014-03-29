@@ -4,6 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Column Order</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= column.name %></td>
     <td><%= column.description %></td>
+    <td><%= column.column_order %></td>
     <td><%= link_to 'Show', column %></td>
     <td><%= link_to 'Edit', edit_column_path(column) %></td>
     <td><%= link_to 'Destroy', column, :confirm => 'Are you sure?', :method => :delete %></td>

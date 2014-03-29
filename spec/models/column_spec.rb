@@ -8,7 +8,7 @@ describe Column do
     @attr = {
       :name => "Example Column",
       :description => "This is an example column.",
-      :order => 1
+      :column_order => 1
     }
 
     @column = Column.new(@attr)
@@ -18,7 +18,7 @@ describe Column do
 
   it { should respond_to(:name) }
   it { should respond_to(:description) }
-  it { should respond_to(:order) }
+  it { should respond_to(:column_order) }
 
   it { should be_valid }
 
@@ -82,35 +82,35 @@ describe Column do
     end
   end
 
-  describe "Order" do
-    context "when order is an integer" do
-      before { @column.order = 3 }
+  describe "column_order" do
+    context "when column_order is an integer" do
+      before { @column.column_order = 3 }
 
       it "should be valid" do
         should be_valid
       end
     end
 
-    context "when order is not integer" do
-      before { @column.order = "abc" }
+    context "when column_order is not integer" do
+      before { @column.column_order = "abc" }
 
       it "should not be valid" do
         should_not be_valid
       end
     end
 
-    context "when order is nil" do
+    context "when column_order is nil" do
       before do
         @first_column = Column.new(@attr)
-        @first_column.order = 2
+        @first_column.column_order = 2
         @first_column.save
 
-        @column.order = nil
+        @column.column_order = nil
         @column.save!
       end
 
       it "should assign the column as the last column" do
-        @column.order.should eq(@first_column.order + 1)
+        @column.column_order.should eq(@first_column.column_order + 1)
       end
     end
   end

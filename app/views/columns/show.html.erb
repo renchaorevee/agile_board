@@ -10,6 +10,11 @@
   <%= @column.description %>
 </p>
 
+<p>
+  <b>Order:</b>
+  <%= @column.column_order %>
+</p>
+
 
 <%= link_to 'Edit', edit_column_path(@column) %> |
 <%= link_to 'Back', columns_path %>

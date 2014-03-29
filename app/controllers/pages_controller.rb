@@ -2,6 +2,8 @@ class PagesController < ApplicationController
 
   def home
     @title = "Home"
+
+    @columns = Column.all(:order => "column_order")
   end
 
   def contact
