@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :stickies
+
   resources :columns
 
   resources :users

@@ -4347,3 +4347,30 @@ Migrating to RenameOrderColumnInColumns (20140329215103)
   [1m[35mSQL (0.0ms)[0m  SELECT MAX("columns"."column_order") AS max_id FROM "columns"
   [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 21:55:13.211000', '2014-03-29 21:55:13.211000')[0m
   [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSQL (7.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+Migrating to RenameOrderColumnInColumns (20140329215103)
+Migrating to CreateStickies (20140329225428)
+  [1m[36mSQL (4.0ms)[0m  [1mCREATE TABLE "stickies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "details" varchar(255), "archived" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140329225428')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[36mSCHEMA (29.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("stickies")[0m

@@ -2640,3 +2640,30 @@ Rendered layouts/_header.html.erb (39.0ms)
 Rendered layouts/_footer.html.erb (5.0ms)
 Rendered pages/home.html.erb within layouts/application (602.0ms)
 Completed 200 OK in 694ms (Views: 662.0ms | ActiveRecord: 6.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+  [1m[36mSQL (8.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+Migrating to RenameOrderColumnInColumns (20140329215103)
+Migrating to CreateStickies (20140329225428)
+  [1m[36mSQL (17.0ms)[0m  [1mCREATE TABLE "stickies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "details" varchar(255), "archived" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140329225428')[0m
+  [1m[35mSQL (3.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
