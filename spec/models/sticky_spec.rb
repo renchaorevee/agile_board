@@ -24,6 +24,7 @@ describe Sticky do
 
   it { should respond_to(:details) }
   it { should respond_to(:column) }
+  it { should respond_to(:owners) }
 
   it { should be_valid }
   it { should_not be_archived }
@@ -99,4 +100,71 @@ describe Sticky do
     end
   end
 
+  describe "Owners" do
+    context "when owners are not assigned" do
+      before { @sticky.owners = [] }
+      it "should be valid" do
+        should be_valid
+      end
+    end
+
+    context "when a owner is assigned" do
+      before do
+        @first_owner = Factory(:user)
+        @sticky.owners = [ @first_owner ]
+        @sticky.save!
+      end
+
+      it "should be valid" do
+        should be_valid
+      end
+
+      it "should belong to correct owner" do
+        @sticky.owners.length.should eq(1)
+        @sticky.owners.should include(@first_owner)
+      end
+    end
+
+    context "when several owners are assigned" do
+      before do
+        @first_owner = Factory(:user)
+        @second_owner = Factory(:user, :email => Factory.next(:email))
+        @sticky.owners = [ @first_owner, @second_owner ]
+        @sticky.save!
+      end
+
+      it "should be valid" do
+        should be_valid
+      end
+
+      it "should belong to correct owner" do
+        @sticky.owners.length.should eq(2)
+        @sticky.owners.should include(@first_owner)
+        @sticky.owners.should include(@second_owner)
+      end
+    end
+
+    context "when the sticky is deleted" do
+      before do
+        @first_owner = Factory(:user)
+        @second_owner = Factory(:user, :email => Factory.next(:email))
+        @sticky.owners = [ @first_owner, @second_owner ]
+        @sticky.save!
+      end
+
+      it "should delete the owning relationship but not the owners" do
+        @sticky.destroy
+        [@first_owner, @second_owner].each do |owner|
+          lambda do
+            StickiesOwners.find(owner)
+          end.should raise_error(ActiveRecord::RecordNotFound)
+
+          lambda do
+            User.find(owner)
+          end.should_not raise_error(ActiveRecord::RecordNotFound)
+        end
+      end
+    end
+
+  end
 end

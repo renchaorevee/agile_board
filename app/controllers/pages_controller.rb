@@ -1,8 +1,10 @@
 class PagesController < ApplicationController
+  include UsersHelper
 
   def home
     @title = "Home"
 
+    @users = User.all()
     @columns = Column.all(:order => "column_order")
   end
 

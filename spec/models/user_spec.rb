@@ -172,4 +172,48 @@ describe User do
       @user.should be_admin
     end
   end
+
+  describe "stickies" do
+    before(:each) do
+      @user = User.create!(@attr)
+    end
+
+    it "should respond to stickies" do
+      @user.should respond_to(:stickies)
+    end
+
+    context "when the user is deleted" do
+      before do
+        @column = Factory(:column)
+        @column.save!
+
+        @first_sticky = Factory(:sticky, :column => @column)
+        @first_sticky.owners = [ @user ]
+        @first_sticky.save!
+
+        @second_sticky = Factory(:sticky, :column => @column)
+        @second_sticky.owners = [ @user ]
+        @second_sticky.save!
+      end
+
+      it "should own correct stickies" do
+        @user.stickies.length.should eq(2)
+        @user.stickies.should include(@first_sticky)
+        @user.stickies.should include(@second_sticky)
+      end
+
+      it "should delete the owning relationship but not the stickies" do
+        @user.destroy
+        [@first_sticky, @second_sticky].each do |sticky|
+          lambda do
+            StickiesOwners.find(sticky)
+          end.should raise_error(ActiveRecord::RecordNotFound)
+
+          lambda do
+            Sticky.find(sticky)
+          end.should_not raise_error(ActiveRecord::RecordNotFound)
+        end
+      end
+    end
+  end
 end
