@@ -1,5 +1,5 @@
-<div style="max-width: 400px; float:left;">
-  <div style="float:left">
+<div style="width: 252px; max-width: 400px; float:left;">
+  <div style="float:left; width: 250px;">
     <div style="text-align: center">
       <%= column.name %>
     </div>
@@ -7,7 +7,9 @@
     </div>
     <div>
       <div style="padding: 10px;">
-        <%= render("sticky") %>
+        <% column.stickies.each do |sticky| %>
+          <%= render("sticky", :sticky => sticky) %>
+        <% end %>
       </div>
     </div>
   </div>
