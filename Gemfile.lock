@@ -59,6 +59,7 @@ GEM
     nokogiri (1.4.4-java)
       weakling (>= 0.0.3)
     polyglot (0.3.3)
+    pr_geohash (1.0.0)
     rack (1.2.5)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
@@ -81,6 +82,8 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    rsolr (1.0.10)
+      builder (>= 2.1.2)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -95,6 +98,14 @@ GEM
       railties (~> 3.0)
       rspec (~> 2.6.0)
     spork (0.9.0.rc8)
+    sunspot (2.1.0)
+      pr_geohash (~> 1.0)
+      rsolr (~> 1.0.7)
+    sunspot_rails (2.1.0)
+      nokogiri
+      rails (>= 3)
+      sunspot (= 2.1.0)
+    sunspot_solr (2.1.0)
     thor (0.14.6)
     treetop (1.4.10)
       polyglot
@@ -121,5 +132,7 @@ DEPENDENCIES
   rails (= 3.0.12)
   rspec-rails (= 2.6.1)
   spork (= 0.9.0.rc8)
+  sunspot_rails
+  sunspot_solr
   webrat (= 0.7.1)
   will_paginate (~> 3.0)
