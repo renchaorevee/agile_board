@@ -1,0 +1,27 @@
+<h1>Listing stickies</h1>
+
+<table>
+  <tr>
+    <th>Details</th>
+    <th>Archived</th>
+    <th>Column</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stickies.each do |sticky| %>
+  <tr>
+    <td><%= sticky.details %></td>
+    <td><%= sticky.archived %></td>
+    <td><%= sticky.column.name %></td>
+    <td><%= link_to 'Show', sticky %></td>
+    <td><%= link_to 'Edit', edit_sticky_path(sticky) %></td>
+    <td><%= link_to 'Destroy', sticky, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sticky', new_sticky_path %>

@@ -1,0 +1,18 @@
+<div style="width: 252px; max-width: 400px; float:left;">
+  <div style="float:left; width: 250px;">
+    <div style="text-align: center">
+      <%= column.name %>
+    </div>
+    <div><hr>
+    </div>
+    <div>
+      <div style="padding: 10px;">
+        <% column.stickies.each do |sticky| %>
+          <%= render("sticky", :sticky => sticky) %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div style="float:right; min-height: 500px; border-left: 2px solid #808080;">
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<%= form_for(@sticky) do |f| %>
+  <% if @sticky.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sticky.errors.count, "error") %> prohibited this sticky from being saved:</h2>
+
+      <ul>
+      <% @sticky.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </div>
+  <div class="field">
+    <%= f.label :archived %><br />
+    <%= f.check_box :archived %>
+  </div>
+  <div>
+    <%= f.label :column_id %><br />
+    <%= f.select :column_id, Column.all.collect {|x| [x.name, x.id]}, {}, :multiple => false %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

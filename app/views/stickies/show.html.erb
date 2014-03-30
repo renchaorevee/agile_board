@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Details:</b>
+  <%= @sticky.details %>
+</p>
+
+<p>
+  <b>Archived:</b>
+  <%= @sticky.archived %>
+</p>
+
+<p>
+  <b>Column:</b>
+  <%= @sticky.column.name %>
+</p>
+
+<%= link_to 'Edit', edit_sticky_path(@sticky) %> |
+<%= link_to 'Back', stickies_path %>
