@@ -6,12 +6,11 @@
       <%= sticky.details %>
     </div>
     <div>
-      <div style="float: right; margin: 2px">
-        <img src="http://gravatar.com/avatar/2fe381b816b40a33ac7f5e646e5f6efb?size=40" class="avatar"/>
-      </div>
-      <div style="float: right; margin: 2px">
-        <img src="http://gravatar.com/avatar/2fe381b816b40a33ac7f5e646e5f6efb?size=40" class="avatar"/>
-      </div>
+      <% sticky.owners.each do |owner| %>
+        <div style="float: right; margin: 2px">
+          <%= render("member", :user => owner) %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
