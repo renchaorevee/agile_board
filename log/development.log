@@ -2695,3 +2695,208 @@ Migrating to AddColumnIdInStickies (20140329233733)
   [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
   [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
   [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from (root) at /Users/allench86/Dropbox/rails_projects/agile_board/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-29 20:07:19 -0700
+  Processing by PagesController#home as HTML
+  [1m[36mColumn Load (39.0ms)[0m  [1mSELECT "columns".* FROM "columns" ORDER BY column_order[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_stylesheets.html.erb (17.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (41.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered pages/home.html.erb within layouts/application (328.0ms)
+Completed 200 OK in 805ms (Views: 562.0ms | ActiveRecord: 40.0ms)
+
+
+Started GET "/stickies" for 127.0.0.1 at 2014-03-29 20:07:30 -0700
+  Processing by StickiesController#index as HTML
+  [1m[35mSticky Load (1.0ms)[0m  SELECT "stickies".* FROM "stickies"
+Rendered layouts/_stylesheets.html.erb (16.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered layouts/_footer.html.erb (7.0ms)
+Rendered stickies/index.html.erb within layouts/application (263.0ms)
+Completed 200 OK in 482ms (Views: 398.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stickies/new" for 127.0.0.1 at 2014-03-29 20:07:34 -0700
+  Processing by StickiesController#new as HTML
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns"
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered stickies/_form.html.erb (503.0ms)
+Rendered layouts/_stylesheets.html.erb (11.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (136.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered stickies/new.html.erb within layouts/application (787.0ms)
+Completed 200 OK in 931ms (Views: 870.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/stickies" for 127.0.0.1 at 2014-03-29 20:08:53 -0700
+  Processing by StickiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JuKiCLHFxOMsLM4owZ5bPn8L9dIzjXaN0uQhtefVn3s=", "sticky"=>{"details"=>"Make relationship of stickies and members.", "archived"=>"0", "column_id"=>"1"}, "commit"=>"Create Sticky"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mAREL (4.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Make relationship of stickies and members.', 'f', '2014-03-30 03:08:53.860000', '2014-03-30 03:08:53.860000', 1)[0m
+Redirected to http://0.0.0.0:3000/stickies/1
+Completed 302 Found in 185ms
+
+
+Started GET "/stickies/1" for 127.0.0.1 at 2014-03-29 20:08:53 -0700
+  Processing by StickiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSticky Load (0.0ms)[0m  [1mSELECT "stickies".* FROM "stickies" WHERE "stickies"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered layouts/_stylesheets.html.erb (16.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (135.0ms)
+Rendered layouts/_footer.html.erb (9.0ms)
+Rendered stickies/show.html.erb within layouts/application (500.0ms)
+Completed 200 OK in 652ms (Views: 597.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/stickies" for 127.0.0.1 at 2014-03-29 20:09:01 -0700
+  Processing by StickiesController#index as HTML
+  [1m[35mSticky Load (1.0ms)[0m  SELECT "stickies".* FROM "stickies"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (96.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered stickies/index.html.erb within layouts/application (320.0ms)
+Completed 200 OK in 444ms (Views: 402.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/stickies" for 127.0.0.1 at 2014-03-29 20:09:27 -0700
+  Processing by StickiesController#index as HTML
+  [1m[35mSticky Load (1.0ms)[0m  SELECT "stickies".* FROM "stickies"
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mColumn Load (1.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (108.0ms)
+Rendered layouts/_footer.html.erb (83.0ms)
+Rendered stickies/index.html.erb within layouts/application (462.0ms)
+Completed 200 OK in 596ms (Views: 541.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/stickies/new" for 127.0.0.1 at 2014-03-29 20:11:02 -0700
+  Processing by StickiesController#new as HTML
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mColumn Load (1.0ms)[0m  SELECT "columns".* FROM "columns"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered stickies/_form.html.erb (262.0ms)
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (106.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered stickies/new.html.erb within layouts/application (622.0ms)
+Completed 200 OK in 762ms (Views: 711.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/stickies" for 127.0.0.1 at 2014-03-29 20:11:12 -0700
+  Processing by StickiesController#index as HTML
+  [1m[35mSticky Load (0.0ms)[0m  SELECT "stickies".* FROM "stickies"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (3.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mColumn Load (1.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (21.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (115.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered stickies/index.html.erb within layouts/application (354.0ms)
+Completed 200 OK in 505ms (Views: 431.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/stickies/1" for 127.0.0.1 at 2014-03-29 20:11:16 -0700
+  Processing by StickiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSticky Load (0.0ms)[0m  SELECT "stickies".* FROM "stickies" WHERE "stickies"."id" = 1 LIMIT 1
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (9.0ms)
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (92.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered stickies/show.html.erb within layouts/application (347.0ms)
+Completed 200 OK in 485ms (Views: 432.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/stickies/1/edit" for 127.0.0.1 at 2014-03-29 20:11:18 -0700
+  Processing by StickiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSticky Load (1.0ms)[0m  SELECT "stickies".* FROM "stickies" WHERE "stickies"."id" = 1 LIMIT 1
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mColumn Load (0.0ms)[0m  SELECT "columns".* FROM "columns"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+Rendered stickies/_form.html.erb (158.0ms)
+Rendered layouts/_stylesheets.html.erb (26.0ms)
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Rendered layouts/_header.html.erb (87.0ms)
+Rendered layouts/_footer.html.erb (8.0ms)
+Rendered stickies/edit.html.erb within layouts/application (419.0ms)
+Completed 200 OK in 576ms (Views: 514.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/stickies" for 127.0.0.1 at 2014-03-29 20:11:21 -0700
+  Processing by StickiesController#index as HTML
+  [1m[35mSticky Load (0.0ms)[0m  SELECT "stickies".* FROM "stickies"
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+Rendered layouts/_stylesheets.html.erb (22.0ms)
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[35mSCHEMA (5.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Rendered layouts/_header.html.erb (94.0ms)
+Rendered layouts/_footer.html.erb (6.0ms)
+Rendered stickies/index.html.erb within layouts/application (323.0ms)
+Completed 200 OK in 495ms (Views: 407.0ms | ActiveRecord: 8.0ms)

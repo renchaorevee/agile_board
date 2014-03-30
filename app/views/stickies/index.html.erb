@@ -4,6 +4,7 @@
   <tr>
     <th>Details</th>
     <th>Archived</th>
+    <th>Column</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= sticky.details %></td>
     <td><%= sticky.archived %></td>
+    <td><%= sticky.column.name %></td>
     <td><%= link_to 'Show', sticky %></td>
     <td><%= link_to 'Edit', edit_sticky_path(sticky) %></td>
     <td><%= link_to 'Destroy', sticky, :confirm => 'Are you sure?', :method => :delete %></td>
