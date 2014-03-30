@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  has_widgets do |root|
+    root << widget(:sticky)
+  end
 
   def home
     @title = "Home"

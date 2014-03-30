@@ -7,6 +7,8 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '~> 3.0'
 gem 'json', '~> 1.8.1'
 gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.6'
+gem 'apotomo'
+gem 'jquery-rails'
 
 group :development do
   gem 'annotate', '2.4.0'
