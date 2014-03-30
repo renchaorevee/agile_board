@@ -6,4 +6,8 @@ class Sticky < ActiveRecord::Base
 
   has_many :sticky_owners, foreign_key: "sticky_id", class_name: "StickiesOwners", dependent: :destroy
   has_many :owners, through: :sticky_owners, source: :user
+
+  searchable do
+    text :details
+  end
 end

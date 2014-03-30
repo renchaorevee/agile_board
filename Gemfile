@@ -8,6 +8,9 @@ gem 'will_paginate', '~> 3.0'
 gem 'json', '~> 1.8.1'
 gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.6'
 
+gem 'sunspot_rails'
+gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
+
 group :development do
   gem 'annotate', '2.4.0'
   gem 'faker', '0.3.1'
