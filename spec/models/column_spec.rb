@@ -19,6 +19,7 @@ describe Column do
   it { should respond_to(:name) }
   it { should respond_to(:description) }
   it { should respond_to(:column_order) }
+  it { should respond_to(:stickies) }
 
   it { should be_valid }
 
@@ -111,6 +112,27 @@ describe Column do
 
       it "should assign the column as the last column" do
         @column.column_order.should eq(@first_column.column_order + 1)
+      end
+    end
+  end
+
+  describe "stickies" do
+    before(:each) do
+      @column.save!
+      @sticky1 = Factory(:sticky, :column => @column, :created_at => 1.day.ago)
+      @sticky2 = Factory(:sticky, :column => @column, :created_at => 1.hour.ago)
+    end
+
+    it "should have the right stickies" do
+      @column.stickies.should == [@sticky1, @sticky2]
+    end
+
+    it "should destroy associated stickies" do
+      @column.destroy
+      [@sticky1, @sticky2].each do |sticky|
+        lambda do
+          Sticky.find(sticky)
+        end.should raise_error(ActiveRecord::RecordNotFound)
       end
     end
   end

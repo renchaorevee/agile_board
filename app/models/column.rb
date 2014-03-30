@@ -1,4 +1,6 @@
 class Column < ActiveRecord::Base
+  has_many :stickies, dependent: :destroy
+
   before_validation :squish_whitespace
   before_validation :assign_default_column_order
 

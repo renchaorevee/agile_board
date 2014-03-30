@@ -12,3 +12,8 @@ end
 Factory.sequence :name do |n|
   "Person #{n}"
 end
+
+Factory.define :sticky do |sticky|
+  sticky.details "Foo bar"
+  sticky.association :column
+end

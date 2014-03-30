@@ -4374,3 +4374,223 @@ Migrating to CreateStickies (20140329225428)
   [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("users")[0m
   [1m[36mSCHEMA (29.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
   [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[36mSQL (7.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+Migrating to RenameOrderColumnInColumns (20140329215103)
+Migrating to CreateStickies (20140329225428)
+Migrating to AddColumnIdInStickies (20140329233733)
+  [1m[36mSQL (6.0ms)[0m  [1mALTER TABLE "stickies" ADD "column_id" integer NOT NULL[0m
+ActiveRecord::JDBCError: [SQLITE_ERROR] SQL error or missing database (Cannot add a NOT NULL column with default value NULL): ALTER TABLE "stickies" ADD "column_id" integer NOT NULL
+  [1m[36mSQL (7.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100821203213)
+Migrating to AddEmailUniquenessIndex (20100822012431)
+Migrating to AddPasswordToUsers (20100822204528)
+Migrating to AddSaltToUsers (20100822233125)
+Migrating to AddAdminToUsers (20100829021049)
+Migrating to CreateColumns (20140329171355)
+Migrating to RenameOrderColumnInColumns (20140329215103)
+Migrating to CreateStickies (20140329225428)
+Migrating to AddColumnIdInStickies (20140329233733)
+  [1m[36mSQL (5.0ms)[0m  [1mALTER TABLE "stickies" ADD "column_id" integer[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("schema_migrations")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140329233733')[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("schema_migrations")[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("users")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("users")[0m
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:08.773000', '2014-03-29 23:52:08.773000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSavepoint (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:08.871000', '2014-03-29 23:52:08.871000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:08.907000', '2014-03-29 23:52:08.907000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:08.959000', '2014-03-29 23:52:08.959000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:08.987000', '2014-03-29 23:52:08.987000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:09.013000', '2014-03-29 23:52:09.013000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-29 23:52:09.060000', '2014-03-29 23:52:09.060000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-29 23:55:35.210000', '2014-03-29 23:55:35.210000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-29 23:55:35.390000', '2014-03-29 23:55:35.390000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT MAX("columns"."column_order") AS max_id FROM "columns"
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-29 23:55:35.405000', '2014-03-29 23:55:35.405000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (6.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:45.900000', '2014-03-30 02:56:45.900000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.015000', '2014-03-30 02:56:46.015000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.086000', '2014-03-30 02:56:46.086000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.118000', '2014-03-30 02:56:46.118000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.178000', '2014-03-30 02:56:46.178000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (14.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.256000', '2014-03-30 02:56:46.256000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.327000', '2014-03-30 02:56:46.327000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.657000', '2014-03-30 02:56:46.657000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.746000', '2014-03-30 02:56:46.746000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.826000', '2014-03-30 02:56:46.826000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('This is an example Sticky.', 'f', '2014-03-30 02:56:46.864000', '2014-03-30 02:56:46.864000', 1)[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 1 LIMIT 1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('First Example Column', 'This is the first example column.', 1, '2014-03-30 02:56:46.936000', '2014-03-30 02:56:46.936000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Second Example Column', 'This is the second example column.', 2, '2014-03-30 02:56:46.948000', '2014-03-30 02:56:46.948000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('This is an example Sticky.', 'f', '2014-03-30 02:56:46.976000', '2014-03-30 02:56:46.976000', 2)[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mColumn Load (0.0ms)[0m  [1mSELECT "columns".* FROM "columns" WHERE "columns"."id" = 2 LIMIT 1[0m
+  [1m[36mSCHEMA (9.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (10.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (4.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-30 03:01:40.006000', '2014-03-30 03:01:40.006000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (8.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-30 03:01:40.421000', '2014-03-30 03:01:40.421000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT MAX("columns"."column_order") AS max_id FROM "columns"
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-30 03:01:40.457000', '2014-03-30 03:01:40.457000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-30 03:01:40.571000', '2014-03-30 03:01:40.571000')
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (11.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-29 03:01:40.619000', '2014-03-30 03:01:40.789000', 1)
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-30 02:01:40.813000', '2014-03-30 03:01:40.826000', 1)[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSticky Load (0.0ms)[0m  [1mSELECT "stickies".* FROM "stickies" WHERE ("stickies".column_id = 1)[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-30 03:01:40.875000', '2014-03-30 03:01:40.875000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-29 03:01:40.885000', '2014-03-30 03:01:40.893000', 1)
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-30 02:01:40.914000', '2014-03-30 03:01:40.950000', 1)[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSticky Load (0.0ms)[0m  SELECT "stickies".* FROM "stickies" WHERE ("stickies".column_id = 1)
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "stickies" WHERE "stickies"."id" = 1[0m
+  [1m[35mAREL (1.0ms)[0m  DELETE FROM "stickies" WHERE "stickies"."id" = 2
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM "columns" WHERE "columns"."id" = 1[0m
+  [1m[35mSavepoint (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "columns"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "columns"
+  [1m[36mSCHEMA (8.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mSavepoint (7.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("columns")
+  [1m[36mSCHEMA (0.0ms)[0m  [1mPRAGMA table_info("columns")[0m
+  [1m[35mAREL (5.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('abc deda fsd', 'This is an example column.', 1, '2014-03-30 03:02:18.380000', '2014-03-30 03:02:18.380000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 2, '2014-03-30 03:02:18.602000', '2014-03-30 03:02:18.602000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT MAX("columns"."column_order") AS max_id FROM "columns"
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 3, '2014-03-30 03:02:18.632000', '2014-03-30 03:02:18.632000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-30 03:02:18.664000', '2014-03-30 03:02:18.664000')
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSCHEMA (0.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSCHEMA (1.0ms)[0m  PRAGMA table_info("stickies")
+  [1m[36mSCHEMA (1.0ms)[0m  [1mPRAGMA table_info("stickies")[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-29 03:02:18.676000', '2014-03-30 03:02:18.739000', 1)
+  [1m[36mSavepoint (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-30 02:02:18.764000', '2014-03-30 03:02:18.776000', 1)[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSticky Load (1.0ms)[0m  [1mSELECT "stickies".* FROM "stickies" WHERE ("stickies".column_id = 1)[0m
+  [1m[35mSavepoint (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "columns" ("name", "description", "column_order", "created_at", "updated_at") VALUES ('Example Column', 'This is an example column.', 1, '2014-03-30 03:02:18.809000', '2014-03-30 03:02:18.809000')[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-29 03:02:18.824000', '2014-03-30 03:02:18.834000', 1)
+  [1m[36mSavepoint (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mSavepoint (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "stickies" ("details", "archived", "created_at", "updated_at", "column_id") VALUES ('Foo bar', 'f', '2014-03-30 02:02:18.855000', '2014-03-30 03:02:18.885000', 1)[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSavepoint (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSticky Load (0.0ms)[0m  SELECT "stickies".* FROM "stickies" WHERE ("stickies".column_id = 1)
+  [1m[36mAREL (1.0ms)[0m  [1mDELETE FROM "stickies" WHERE "stickies"."id" = 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "stickies" WHERE "stickies"."id" = 2
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "columns" WHERE "columns"."id" = 1[0m
+  [1m[35mSavepoint (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mSticky Load (0.0ms)[0m  [1mSELECT "stickies".* FROM "stickies" WHERE "stickies"."id" = 1 LIMIT 1[0m
+  [1m[35mSticky Load (0.0ms)[0m  SELECT "stickies".* FROM "stickies" WHERE "stickies"."id" = 2 LIMIT 1
