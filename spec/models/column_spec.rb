@@ -119,8 +119,8 @@ describe Column do
   describe "stickies" do
     before(:each) do
       @column.save!
-      @sticky1 = Factory(:sticky, :column => @column, :created_at => 1.day.ago)
-      @sticky2 = Factory(:sticky, :column => @column, :created_at => 1.hour.ago)
+      @sticky1 = Factory(:sticky, :column => @column)
+      @sticky2 = Factory(:sticky, :column => @column)
     end
 
     it "should have the right stickies" do

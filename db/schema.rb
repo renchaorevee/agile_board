@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140329233733) do
+ActiveRecord::Schema.define(:version => 20140330035745) do
 
   create_table "columns", :force => true do |t|
     t.string   "name",         :null => false
@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(:version => 20140329233733) do
     t.datetime "updated_at"
     t.integer  "column_id"
   end
+
+  create_table "stickies_owners", :force => true do |t|
+    t.integer  "sticky_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "stickies_owners", ["sticky_id", "user_id"], :name => "index_stickies_owners_on_sticky_id_and_user_id", :unique => true
+  add_index "stickies_owners", ["sticky_id"], :name => "index_stickies_owners_on_sticky_id"
+  add_index "stickies_owners", ["user_id"], :name => "index_stickies_owners_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"
